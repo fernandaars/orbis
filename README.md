@@ -20,8 +20,8 @@ O objetivo deste projeto é produzir uma plataforma online que estimule o hábit
 - ...
 
 **Tarefas (5-10)**
-- ...
 [Tarefas por Desenvolvedor](https://docs.google.com/spreadsheets/d/1o89Aa4Ew3fDpD_Zb_ljFoYOJuLmNmHYwqFQw6hPqo9U/edit?usp=sharing)
+- ...
 
 **Calendário**
 
