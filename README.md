@@ -4,7 +4,7 @@
 - Fernanda Aparecida R. Silva | 2016006433
 - Italo L. Simas | 2016006611
 - Ketlyn Caroline S. de Castro | 2016006654
-- Scarlet G. Vianna | 2016006891
+- Scarlet G. Viana | 2016006891
 
 **Objetivo e Descrição**
 O objetivo deste projeto é produzir uma plataforma online que estimule o hábito da leitura no público infantil. Para tanto, buscamos apresentar um acervo de livros digitais ilustrados e de ficção infanto-juvenil que, através de uma interface amigável e lúdica, podem ser selecionados de acordo com o gosto da criança.
