@@ -16,7 +16,7 @@ O objetivo deste projeto é produzir uma plataforma online que estimule o hábit
 - PHP
 - phpMyAdmin (MySQL)
 
-**Estórias**
+[**Estórias**]((https://github.com/fernandaars/orbis/tree/master/docs/user_stories))
 - Abrir Livro
 - Adicionar Livro Favorito
 - Avaliar Livro
@@ -26,17 +26,16 @@ O objetivo deste projeto é produzir uma plataforma online que estimule o hábit
 - Mostrar Descrição do Livro
 - Separar Livro Por Categoria
 - Separar Livros Por Faixa Etária
-&nbsp;
-(Detalhes [AQUI])(https://github.com/fernandaars/orbis/tree/master/docs/user_stories)
 
 **Tarefas**
-[Tarefas por Desenvolvedor](https://docs.google.com/spreadsheets/d/1o89Aa4Ew3fDpD_Zb_ljFoYOJuLmNmHYwqFQw6hPqo9U/edit?usp=sharing)
+- [Distribuição de Tarefas por Desenvolvedor](https://docs.google.com/spreadsheets/d/1o89Aa4Ew3fDpD_Zb_ljFoYOJuLmNmHYwqFQw6hPqo9U/edit?usp=sharing)
 
 **Calendário**
-
 - 24/08 a 09/09 - Preparação Para Início do Sprint;
 - 10/09 a 20/10 - Sprint;
 - 25/09 e 09/10 - Inspeção do Burndown Chart e Planilha de Apuração de Horas Pelo Monitor;
 - 21/10 e 23/10 - Sprint review.
 
+**Gráfico de Burndown**
+- [Gráfico de Burndown](https://docs.google.com/spreadsheets/d/1o89Aa4Ew3fDpD_Zb_ljFoYOJuLmNmHYwqFQw6hPqo9U/edit?usp=sharing)
 
