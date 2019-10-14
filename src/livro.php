@@ -16,7 +16,7 @@ class Livro{
         $this->Faixa_Etaria = $Faixa_Etaria;
         $this->Descricao = $Descricao;
 
-        print "Criando o objeto ".$this->Titulo."\n";
+        #print "Criando o objeto ".$this->Titulo."\n";
     }
 
     function getISBN(){
@@ -31,6 +31,14 @@ class Livro{
         return $this->Ano;
     }
 
+    function getFaixa_Etaria(){
+        return $this->Faixa_Etaria;
+    }
+
+    function getDescricao(){
+        return $this->Descricao;
+    }
+
     function ImprimeLivro(){
         print $this->getISBN();
         print $this->getTitulo();
@@ -43,7 +51,7 @@ class Livro{
 
 }
 
-#$book = new Livro("123", "Um livro", 2019);
+#$book = new Livro("123", "Um livro", 2019, 2, NULL);
 #print $book->getISBN();
 #$book->ImprimeLivro();
 
