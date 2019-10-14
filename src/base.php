@@ -22,7 +22,7 @@ class Base{
         include_once "autor.php";
         include_once "editora.php";
 
-        #$this->importaLivros(5);
+        $this->importaLivros(5);
         $this->importaCategorias();
         $this->importaAutores();
         $this->importaEditoras();
@@ -42,7 +42,7 @@ class Base{
             echo "   ";
             #print($row->faixaEtaria);
             #echo "   ";
-            $livro = new Categoria($row->nome, $row->codCategoria);
+            $livro = new Livro($row->isbn, $row->titulo, $row->anoPublicacao, $row->faixaEtaria, $row->descricao);
             $this->Array_Livros[] = $livro;
         }
 
