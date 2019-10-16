@@ -27,6 +27,7 @@ class Base{
         $this->importaAutores();
         $this->importaEditoras();
 
+        $this->defineCategoria();
 
     }
 
@@ -38,14 +39,15 @@ class Base{
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
+            /*
             print($row->titulo);
             echo "   ";
-            #print($row->faixaEtaria);
-            #echo "   ";
-            $livro = new Livro($row->isbn, $row->titulo, $row->anoPublicacao, $row->faixaEtaria, $row->descricao);
-            $this->Array_Livros[] = $livro;
-        }
-
+            print($row->faixaEtaria);
+            echo "   ";
+            */
+            $livro = new Livro($row->isbn, $row->titulo, $row->anoPublicacao, $row->faixaEtaria, $row->descricao, $row->autor, $row->editora);
+            $this->Array_Livros[$row->isbn] = $livro;
+        } 
     }
     
     function importaCategorias(){
@@ -56,12 +58,14 @@ class Base{
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
+            /*
             print($row->nome);
             echo "   ";
             print($row->codCategoria);
             echo "   ";
+            */
             $categoria = new Categoria($row->nome, $row->codCategoria);
-            $this->Array_Categorias[] = $categoria;
+            $this->Array_Categorias[$row->codCategoria] = $categoria;
         }
 
     }
@@ -74,12 +78,14 @@ class Base{
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
+            /*
             print($row->nome);
-            echo " oi  ";
+            echo "  ";
             print($row->codAutor);
             echo "   ";
+            */
             $autor = new Autor($row->nome, $row->codAutor);
-            $this->Array_Autores[] = $autor;
+            $this->Array_Autores[$row->codAutor] = $autor;
         }
 
     }
@@ -92,23 +98,176 @@ class Base{
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
+            /*
             print($row->nome);
             echo "   ";
             print($row->codEditora);
             echo "   ";
+            */
             $editora = new Editora($row->nome, $row->codEditora);
-            $this->Array_editoras[] = $editora;
+            $this->Array_Editoras[$row->codEditora] = $editora;
+        }
+
+    } 
+
+    function defineCategoria(){
+
+        //Consulta ao banco para importar categorias de cada livro
+        $stmt = $this->conexao->prepare('SELECT * FROM categoriaLivro');
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+
+        while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
+            $ISBN = $row->isbn;
+            $livro = $this->retornaLivroISBN($ISBN);
+            if ($livro != NULL){
+                $livro->setCod_Categoria($row->categoriaCod);
+            }
         }
 
     }
 
+    function retornaLivroISBN($ISBN){
+        if (array_key_exists($ISBN, $this->Array_Livros))
+            return $this->Array_Livros[$ISBN];
+        else
+            return NULL;
+    }
+
+    function retornaCategoriaCod($codigo){
+        if (array_key_exists($codigo, $this->Array_Categorias))
+            return $this->Array_Categorias[$codigo];
+        else
+            return NULL;
+    }
+
+    function retornaEditoraCod($codigo){
+        if (array_key_exists($codigo, $this->Array_Editoras))
+            return $this->Array_Editoras[$codigo];
+        else
+            return NULL;
+    }
+
+    function retornaAutorCod($codigo){
+        if (array_key_exists($codigo, $this->Array_Autores))
+            return $this->Array_Autores[$codigo];
+        else
+            return NULL;
+    }
+
+    function retornaLivroTitulo($Titulo){
+        foreach ($this->Array_Livros as &$livro) {
+            if ($livro->getTitulo() == $Titulo)
+                return $livro;
+        }
+    }
+
+    function retornaCategoriaNome($nomeCategoria){
+        foreach ($this->Array_Categorias as &$categoria) {
+            if ($categoria->getNome() == $nomeCategoria)
+                return $categoria;
+        }
+    }
+
+    function retornaEditoraNome($nomeEditora){
+        foreach ($this->Array_Editoras as &$editora) {
+            if ($editora->getNome() == $nomeEditora)
+                return $editora;
+        }
+    }
+
+    function retornaAutorNome($nomeAutor){
+        foreach ($this->Array_Autores as &$autor) {
+            if ($autor->getNome() == $nomeAutor)
+                return $autor;
+        }
+    }
+
+    function livrosCategoria($nomeCategoria){
+        $lista_livros = array();
+        $categoria = $this->retornaCategoriaNome($nomeCategoria);
+        foreach ($this->Array_Livros as &$livro) {
+            $key = array_search($categoria->getCodigo(), $livro->getCod_Categoria());
+            echo " @@ ";
+            print($key);
+            echo " -- ";
+            print_r($livro->getCod_Categoria());
+            echo " @@ ";
+            if ($key === 0 or $key != NULL){
+                $lista_livros[] = $livro;
+                echo " >>>>>Na lista: ";
+                print($livro->getTitulo());
+                echo " <<<<<<<< ";
+            }
+            else{
+                echo " ******Fora da Lista: ";
+                print($livro->getTitulo());
+                echo " ******** ";
+            }
+        }
+        return $lista_livros;
+    }
+
+    function livrosEditora($nomeEditora){
+        $lista_livros = array();
+        $editora = $this->retornaEditoraNome($nomeEditora);
+        foreach ($this->Array_Livros as &$livro) {
+            if ($editora->getCodigo() == $livro->getCod_Editora()){
+                $lista_livros[] = $livro;
+                echo " >>>>>Na lista: ";
+                print($livro->getTitulo());
+                echo " <<<<<<<< ";
+            }
+            else{
+                echo " ******Fora da Lista: ";
+                print($livro->getTitulo());
+                echo " ******** ";
+            }
+        }
+        return $lista_livros;
+    }
+
+    function livrosAutor($nomeAutor){
+        $lista_livros = array();
+        $autor = $this->retornaAutorNome($nomeAutor);
+        foreach ($this->Array_Livros as &$livro) {
+            if ($autor->getCodigo() == $livro->getCod_Autor()){
+                $lista_livros[] = $livro;
+                echo " >>>>>Na lista: ";
+                print($livro->getTitulo());
+                echo " <<<<<<<< ";
+            }
+            else{
+                echo " ******Fora da Lista: ";
+                print($livro->getTitulo());
+                echo " ******** ";
+            }
+        }
+        return $lista_livros;
+    }
+
     function __destruct(){
+        /*
         print "Destruindo a Base\n";
         echo "  ";
+        */
     }
 
 }
 
 $b = new Base();
+#$booksCat = $b->livrosCategoria("Drama");
+#$booksEdi = $b->livrosEditora("Rocco");
+#$booksAut = $b->livrosAutor("Eleanor H. Porter");
+#$book = $b->retornaLivroTitulo("O Mágico de Oz");
+#print_r($book);
+#$book = $b->retornaCategoriaCod(6);
+#print_r($book);
+#$book = $b->retornaAutorCod(7);
+#print_r($book);
+$book = $b->retornaEditoraCod(3);
+print_r($book);
+#print ($book->getTitulo());
+#echo " ";
 
 ?>
