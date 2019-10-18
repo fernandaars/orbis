@@ -3,7 +3,7 @@
 class Base{
 
     //Variavel para salvar conexão
-    private $conexao = NULL;
+    private $Conexao = NULL;
 
     //Atributos da Base
     private $Array_Livros= NULL;
@@ -11,10 +11,10 @@ class Base{
     private $Array_Categorias = NULL;
     private $Array_Autores = NULL;
 
-    function __construct(){
+    function __construct($Faixa_Etaria){
 
-        include_once "conexao_banco.php"; //importa conexão $conn
-        $this->conexao = $conn;
+        include "conexao_banco.php"; //importa conexão $conn
+        $this->Conexao = $conn;
 
         //importa classes da base
         include_once "livro.php";
@@ -22,7 +22,7 @@ class Base{
         include_once "autor.php";
         include_once "editora.php";
 
-        $this->importaLivros(5);
+        $this->importaLivros($Faixa_Etaria);
         $this->importaCategorias();
         $this->importaAutores();
         $this->importaEditoras();
@@ -34,7 +34,7 @@ class Base{
     function importaLivros($idade){
 
         //Consulta ao banco para importar livros com faixa etaria correspondente
-        $stmt = $this->conexao->prepare('SELECT * FROM livros WHERE faixaEtaria<=:idade');
+        $stmt = $this->Conexao->prepare('SELECT * FROM livros WHERE faixaEtaria<=:idade');
         $stmt->bindParam(':idade', $idade, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -45,7 +45,7 @@ class Base{
             print($row->faixaEtaria);
             echo "   ";
             */
-            $livro = new Livro($row->isbn, $row->titulo, $row->anoPublicacao, $row->faixaEtaria, $row->descricao, $row->autor, $row->editora);
+            $livro = new Livro($row->isbn, $row->titulo, $row->anoPublicacao, $row->faixaEtaria, $row->descricao, $row->pdf, $row->codAutor, $row->codEditora);
             $this->Array_Livros[$row->isbn] = $livro;
         } 
     }
@@ -53,7 +53,7 @@ class Base{
     function importaCategorias(){
     
         //Consulta ao banco para importar categorias
-        $stmt = $this->conexao->prepare('SELECT * FROM categoria');
+        $stmt = $this->Conexao->prepare('SELECT * FROM categoria');
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -73,7 +73,7 @@ class Base{
     function importaAutores(){
     
         //Consulta ao banco para importar autores
-        $stmt = $this->conexao->prepare('SELECT * FROM autor');
+        $stmt = $this->Conexao->prepare('SELECT * FROM autor');
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -93,7 +93,7 @@ class Base{
     function importaEditoras(){
     
         //Consulta ao banco para importar editoras
-        $stmt = $this->conexao->prepare('SELECT * FROM editora');
+        $stmt = $this->Conexao->prepare('SELECT * FROM editora');
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -113,7 +113,7 @@ class Base{
     function defineCategoria(){
 
         //Consulta ao banco para importar categorias de cada livro
-        $stmt = $this->conexao->prepare('SELECT * FROM categoriaLivro');
+        $stmt = $this->Conexao->prepare('SELECT * FROM categoriaLivro');
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -121,7 +121,7 @@ class Base{
             $ISBN = $row->isbn;
             $livro = $this->retornaLivroISBN($ISBN);
             if ($livro != NULL){
-                $livro->setCod_Categoria($row->categoriaCod);
+                $livro->setCod_Categoria($row->codCategoria);
             }
         }
 
@@ -255,7 +255,7 @@ class Base{
 
 }
 
-$b = new Base();
+$b = new Base(5);
 #$booksCat = $b->livrosCategoria("Drama");
 #$booksEdi = $b->livrosEditora("Rocco");
 #$booksAut = $b->livrosAutor("Eleanor H. Porter");
