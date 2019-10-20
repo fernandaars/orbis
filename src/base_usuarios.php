@@ -9,7 +9,7 @@ class BaseUsuarios{
     private $Array_Usuarios;
 
     function __construct(){
-        
+
         include "conexao_banco.php"; //importa conexão $conn
         include "usuario.php";
 
@@ -43,9 +43,41 @@ class BaseUsuarios{
     }
 
     function getArray_Usuarios(){
-        return $this->Array_Usuarios;
+        return json_encode($this->Array_Usuarios);
     }
     
+    function getUsuario($email){
+        $usuario = $this->Array_Usuarios[$email];
+        return json_encode($usuario);
+    }
+
+    function getBaseUsuario($email){
+        $usuario = $this->Array_Usuarios[$email];
+        return json_encode($usuario->getBase());
+    }
+
+    function getFavoritoUsuario($email){
+        $usuario = $this->Array_Usuarios[$email];
+        return json_encode($usuario->getFavoritos());
+    }
+
+    function getAvaliaçõesUsuario($email){
+        $usuario = $this->Array_Usuarios[$email];
+        return json_encode($usuario->getAvaliacoes()); 
+    }
+
+    function getLivrosUsuario($email){
+
+    }
+
+    function getEditorasUsuario($email){
+
+    }
+
+    function getCategoriasUsuario($email){
+
+    }
+
     function __destruct(){
         
     }
