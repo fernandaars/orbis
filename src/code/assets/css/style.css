@@ -198,9 +198,10 @@ header nav {
 .navbar .nav > li > a {
   float: none;
   padding: 30px 15px 30px;
-  color: #777777;
+  color: white;
   text-decoration: none;
   text-shadow: none;
+  font-size: 150%;
 }
 
 .navbar .nav > li:hover > a {
@@ -611,6 +612,7 @@ ul.filter li.active a{
 .portfolio-home .image-wrapp img{
 	margin:0;
 	padding:0;
+	height: 400px;
 }
 
 .portfolio-area .thumbnail .caption,
@@ -1783,7 +1785,7 @@ ul.portfolio-area li {
 
 }
 
-p{
+p .book_description{
 	font-size: 200%;
 	line-height: 120%;
 	text-align: justify;
