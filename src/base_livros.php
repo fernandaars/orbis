@@ -255,7 +255,7 @@ class Base{
 
 }
 
-$b = new Base(5);
+#$b = new Base(5);
 #$booksCat = $b->livrosCategoria("Drama");
 #$booksEdi = $b->livrosEditora("Rocco");
 #$booksAut = $b->livrosAutor("Eleanor H. Porter");
@@ -265,8 +265,8 @@ $b = new Base(5);
 #print_r($book);
 #$book = $b->retornaAutorCod(7);
 #print_r($book);
-$book = $b->retornaEditoraCod(3);
-print_r($book);
+#$book = $b->retornaEditoraCod(3);
+#print_r($book);
 #print ($book->getTitulo());
 #echo " ";
 
