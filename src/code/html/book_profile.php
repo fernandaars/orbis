@@ -1,3 +1,8 @@
+<?php 
+include "../php/base_livros.php";
+$b = new Base(5);
+$l = $b->retornaLivroISBN($_GET['ISBN'])
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +32,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
   <header>
     <!-- Navbar
     ================================================== -->
@@ -129,7 +133,7 @@
       <div class="container">
         <div class="row">
           <div class="span8">
-            <h3><i class="m-icon-big-swapright m-icon-white"></i> Procure Seu Novo Livro Favorito!</h3>
+            <h3><i class="m-icon-big-swapright m-icon-white"></i> Procure Seu Novo Livro Favorito! </h3>
           </div>
           <div class="span4">
             <div class="input-append">
@@ -168,7 +172,7 @@
         ================================================== -->
         <section id="general-template" class="doc">
           <div class="page-header first">
-            <h2><b>Volta ao Mundo Em 80 Dias por Julio Verne<b></h2>
+            <h2><b><?php echo $l->getTitulo(); ?> por Julio Verne<b></h2>
           </div>
           <p>Phileas Fogg, um inglês pacato, calmo, metódico e solitário, cumpria todos os dias a mesma rotina. Misterioso, nunca compartilhava sua intimidade com ninguém. Mas tudo mudou quando apostou com alguns sócios do clube metade de sua fortuna, afirmando que daria a volta ao mundo em 80 dias! Era o ano de 1872, e ele e seu novo criado, Passepartout, embarcaram em uma aventura que nenhum dos dois imaginava como seria o seu fim!
           </p>
