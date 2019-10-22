@@ -953,10 +953,10 @@ button.close {
 .btn-success {
   color: #ffffff;
   text-shadow: none;
-  background: #7cbb00;
-  border-color: #7cbb00;
+  background: #29b6d2;
+  border-color: #29b6d2;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #51a351;
+  *background-color: #29b6d2;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
@@ -967,13 +967,13 @@ button.close {
 .btn-success.disabled,
 .btn-success[disabled] {
   color: #ffffff;
-  background: #76b200;
-  *background: #76b200;
+  background: #29b6d2;
+  *background: #29b6d2;
 }
 
 .btn-success:active,
 .btn-success.active {
-  background: #76b200 \9;
+  background: #29b6d2 \9;
 }
 
 .btn-info {
@@ -1214,11 +1214,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn-success.dropdown-toggle {
-  background: #51a351;
+  background: #29b6d2;
 }
 
 .btn-group.open .btn-info.dropdown-toggle {
-  background: #7fbfb1;
+  background: #29b6d2;
 }
 
 .btn-group.open .btn-inverse.dropdown-toggle {
@@ -1886,7 +1886,7 @@ background-image: none;
 
 .progress-success .bar,
 .progress .bar-success {
-  background-color: #7cbb00;
+  background-color: #29b6d2;
 }
 
 .progress-info .bar,
@@ -1978,7 +1978,7 @@ background-image: none;
 }
 .label-success,
 .badge-success {
-  background-color: #7cbb00;
+  background-color: #29b6d2;
 }
 .label-info,
 .badge-info {

@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Orbis</title>
+  <title>Orbis: Biblioteca Virtual Para Crianças</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -27,103 +27,11 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-
-  <!-- =======================================================
-    Theme Name: Scaffold
-    Theme URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
-
   <header>
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <!-- logo -->
-          <a class="brand logo" href="index.html">
-            <img src="../assets/img/logo.png" alt="" />
-          </a>
-          <!-- end logo -->
-          <!-- top menu -->
-          <div class="text-white">
-            <nav>
-              <ul class="nav topnav">
-                <li class="dropdown pink">
-                  <a href="index.html"> Livros</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="index_alt1.html">Veja Nossa Seleção de Livros!</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown purple">
-                  <a href="#">Categorias</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="overview.html">Aventura</a></li>
-                    <li><a href="scaffolding.html">Comédia</a></li>
-                    <li><a href="base-css.html">Drama</a></li>
-                    <li><a href="components.html">Educacional</a></li>
-                    <li><a href="javascript.html">Fantasia</a></li>
-                    <li class="dropdown"><a href="#">Mistério</a>
-                    <li><a href="javascript.html">Romance</a></li>
-                    <li><a href="javascript.html">Sci-fi</a></li>
-                    <li><a href="javascript.html">Terror</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown turquoise">
-                  <a href="#"> Pages</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Our services</a></li>
-                    <li><a href="pricingtable.html">Pricing table</a></li>
-                    <li><a href="faq.html">F.A.Q</a></li>
-                    <li><a href="fullwidth.html">Fullwidth</a></li>
-                    <li><a href="404.html">404</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown green">
-                  <a href="#"> Portfolio</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown"><a href="#">Portfolio type 1</a>
-                      <ul class="dropdown-menu sub-menu">
-                        <li><a href="portfolio-alt1-2cols.html">2 columns</a></li>
-                        <li><a href="portfolio-alt1-3cols.html">3 columns</a></li>
-                        <li><a href="portfolio-alt1-4cols.html">4 columns</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown yellow"><a href="#">Portfolio type 2</a>
-                      <ul class="dropdown-menu sub-menu">
-                        <li><a href="portfolio-alt2-2cols.html">2 columns</a></li>
-                        <li><a href="portfolio-alt2-3cols.html">3 columns</a></li>
-                        <li><a href="portfolio-alt2-4cols.html">4 columns</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="portfolio-alt3.html">Portfolio type 3</a></li>
-                    <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown yellow">
-                  <a href="#"> Blog</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="blog_left_sidebar.html">Blog left sidebar</a></li>
-                    <li><a href="blog_right_sidebar.html">Blog right sidebar</a></li>
-                    <li><a href="post_left_sidebar.html">Post left sidebar</a></li>
-                    <li><a href="post_right_sidebar.html">Post right sidebar</a></li>
-                  </ul>
-                </li>
-                <li class="orange">
-                  <a href="contact.html"> Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- end menu -->
-        </div>
-      </div>
-    </div>
+    <?php include("../html/menu.html"); ?>
   </header>
 
   <section id="intro">
@@ -135,44 +43,50 @@
             <div class="camera_wrap camera_black_skin" id="camera_wrap_2">
               <div data-thumb="../assets/img/slides/camera/img1.jpg" data-src="../assets/img/slides/camera/img1.jpg">
                 <div class="camera_caption fadeFromBottom">
-                  <h2>Twitter bootstrap</h2>
+                  <h2>Orbis: Biblioteca Virtual Para Crianças</h2>
                   <div class="hidden-phone">
                     <p>
-                      Mei ad recteque rationibus, ex quaeque civibus eloquentiam vim. Solet cetero id nam. Ne eos nonumy
-                      voluptua, vis nobis euismod qualisque te, no nam debet oporteat.
+                      O objetivo deste projeto é produzir uma plataforma online que estimule o hábito da leitura no
+                      público infantil. Para tanto, buscamos apresentar um acervo de livros digitais ilustrados e de
+                      ficção infanto-juvenil que, através de uma interface amigável e lúdica, podem ser selecionados
+                      de acordo com o gosto da criança.
                     </p>
                   </div>
                 </div>
               </div>
               <div data-thumb="../assets/img/slides/camera/img2.jpg" data-src="../assets/img/slides/camera/img2.jpg">
                 <div class="camera_caption fadeFromBottom">
-                  <h2>Responsive layout</h2>
+                  <h2>Ler é Bom Para o Cérebro!</h2>
                   <div class="hidden-phone">
                     <p>
-                      Nam omnium salutandi ad, accusam indoctum ne mel, posse expetendis mea at. Luptatum antiopam pro
-                      ne. Eum at autem antiopam sadipscing, an his omnis splendide perfecto.
+                      São inúmeras as pesquisas que comprovam que ler aumenta as conexões neurais, fazendo com que o
+                      cérebro funcione melhor. É como fazer ginástica, só que para a cabeça! Além disso, uma pesquisa
+                      da Universidade Emory, dos EUA, descobriram que ler afeta nosso cérebro como se realmente tivéssemos
+                      vivenciado os eventos sobre o qual estamos lendo.
                     </p>
                   </div>
                 </div>
               </div>
               <div data-thumb="../assets/img/slides/camera/img3.jpg" data-src="../assets/img/slides/camera/img3.jpg">
                 <div class="camera_caption fadeFromBottom">
-                  <h2>Metro style</h2>
+                  <h2>Ler Estimula a Criatividade!</h2>
                   <div class="hidden-phone">
                     <p>
-                      Lorem ipsum dolor sit amet, dicam singulis in ius, eu timeam aperiam pri. His suas solum legimus
-                      eu, sea an duis habemus urbanitas. No sapientem consetetur sit an.
+                      Outra habilidade que se desenvolve mais é a da criatividade: quando lemos um livro em estilo romance,
+                      por exemplo, a capacidade de imaginar o cenário em que a ação se desenvolve, além da imagem física dos
+                      personagens, leva a criar um outro mundo dentro de nossas cabeças.
                     </p>
                   </div>
                 </div>
               </div>
               <div data-thumb="../assets/img/slides/camera/img4.jpg" data-src="../assets/img/slides/camera/img4.jpg">
                 <div class="camera_caption fadeFromBottom">
-                  <h2>Lot of features</h2>
+                  <h2>Ler Incita Empatia!</h2>
                   <div class="hidden-phone">
                     <p>
-                      Sit et laudem aperiri argumentum. Vim laboramus instructior eu, minim aliquid accusata ut est, sea
-                      ut ridens causae quaerendum. Ea vide posidonium usu qui ad pertinax.
+                      Um estudo publicado na revista Psychology Today provou que a leitura tem esse exato efeito: aumentar
+                      nossa capacidade de sentir empatia. A razão é um pouco óbvia: quando estamos lendo, nos conectamos com
+                      a realidade de outro alguém (mesmo que seja fictício) e podemos entender o que é ser aquela outra pessoa. 
                     </p>
                   </div>
                 </div>
@@ -194,41 +108,41 @@
       <div class="row">
         <div class="span3">
           <h3 class="heading-success"><span class="btn btn-large btn-success"><i
-                class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Main features</h3>
-          <p>Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Praesent eleifend sodales felis, in
-            congue purus scelerisque eget.</p>
+                class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Categorias!</h3>
+          <p>Nossos livros estão classificados em várias categorias, escolhidas especialmente para divertir!
+            Do romance à fantasia, do terror ao mistério: sua leitura do seu jeito!</p>
         </div>
         <div class="span3">
           <div class="well well-primary box">
             <img src="../../img/categories/categoria_terror.png" alt="" />
-            <h3>Responsive bootstrap</h3>
+            <h3>Livros de Terror!</h3>
             <p>
-              Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium
-              imperdiet in pri. Mel virtute efficiantur ne zril.
+              O dia das bruxas está chegando e com eles vários livros aterrorizantes,
+              cheios de monstros e segredos! Mas não se preocupe, tudo preparado para o gosto e idade do seu filho!
             </p>
-            <a href="#">Read more</a>
+            <a href="#">Confira!</a>
           </div>
         </div>
         <div class="span3">
           <div class="well well-success box">
             <img src="../../img/categories/categoria_aventura.png" alt="" />
-            <h3>With metro taste</h3>
+            <h3>Livros de Aventura!</h3>
             <p>
-              Ad sit option intellegat, unum populo comprehensam ut sed. Copiosae corrumpit qui ex, duo nullam feugait
-              qualisque at an dicit saperet.
+              A aventura está sempre a espera! Castelos, gigantes, princesas e duendes! Existe um mundo todo prestes
+              a ser descoberto, explorado e conquistado!
             </p>
-            <a href="#">Read more</a>
+            <a href="#">Confira!</a>
           </div>
         </div>
         <div class="span3">
           <div class="well well-warning box">
             <img src="../../img/categories/categoria_comedia.png" alt="" />
-            <h3>Well documented</h3>
+            <h3>Livros de Comédia!</h3>
             <p>
-              Ne vix clita integre expetenda, eos cetero numquam no, in sea omnes detracto. Ne iriure habemus maiestatis
-              mei. Postea euripidis contentiones.
+              Uma risada é sempre bem-vinda, a toda hora é bom rir. Confira nossa seleção dos mais engraçados livros
+              com as mais engraçadas histórias e os personagens mais divertidos.
             </p>
-            <a href="#">Read more</a>
+            <a href="#">Confira!</a>
           </div>
         </div>
       </div>
@@ -251,8 +165,7 @@
 
       <div class="row">
         <div class="span12">
-          <h3><a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i></a> Recent
-            works</h3>
+          <h3><a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i></a> Livros Recentes</h3>
 
           <div id="latest-work" class="carousel btleft">
             <div class="carousel-wrapper">
@@ -261,7 +174,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../../img/book_covers/volta_ao_mundo_em_80_dias.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/volta_ao_mundo_em_80_dias.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -271,7 +184,7 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>Volta ao Mundo em 80 Dias <br> Júlio Verne</h5>
                     </div>
 
                   </div>
@@ -289,14 +202,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>Ponte Para Terabítia <br> Katherine Paterson</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../../img/book_covers/o_misterio_do_cinco-estrelas.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/o_misterio_do_cinco-estrelas.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -306,14 +219,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>O Mistério do 5 Estrelas <br> Marcos Rey</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../../img/book_covers/o_pequeno_principe.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/o_pequeno_principe.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -323,14 +236,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>O Pequeno Príncipe <br> Antoine de Saint-Exupéry</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../../img/book_covers/onde_vivem_os_monstros.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/onde_vivem_os_monstros.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -340,14 +253,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>Onde Vivem os Monstros <br> Maurice Sendak</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../assets/img/dummies/work6.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/harry_potter_e_a_pedra_filosofal.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -357,14 +270,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>Harry Potter <br> JK Rowlling</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../assets/img/dummies/work7.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/matilda.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -374,14 +287,14 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>Matilda <br> Roald Dahl</h5>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="../assets/img/dummies/work8.jpg" alt="Portfolio name" title="" />
+                      <img class="new_image_wrapp" src="../../img/book_covers/o_escaravelho_do_diabo.jpg" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img
                             src="../assets/img/icons/link_post_icon.png" alt="" /></a>
@@ -391,7 +304,7 @@
                       </article>
                     </div>
                     <div class="caption">
-                      <h5>Portfolio name</h5>
+                      <h5>O Escaravelho do Diabo <br> Lúcia Machado de Almeida</h5>
                     </div>
                   </div>
                 </li>
@@ -403,92 +316,7 @@
     </div>
   </section>
 
-  <!-- Footer
- ================================================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="span4">
-          <div class="widget">
-            <h4>About us</h4>
-            <address>
-              <strong>Scaffold company, Inc.</strong><br>
-              445 Mypark Ave, Suite 800<br>
-              Jakarta, Indonesia 14210<br>
-              <abbr title="Phone">P:</abbr> (123) 456-7890
-            </address>
 
-            <address>
-              <strong>Contact us</strong><br>
-              <a href="mailto:#">hello@websitename.com</a>
-            </address>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="widget">
-            <h4>Browse pages</h4>
-            <ul class="nav nav-list regular">
-              <li class="nav-header">More from us</li>
-              <li><a href="#">Work for us</a></li>
-              <li><a href="#">Creative process</a></li>
-              <li><a href="#">Case study</a></li>
-              <li class="nav-header">Quick links</li>
-              <li><a href="#">Scaffold awwards</a></li>
-              <li><a href="#">Meet the team</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="widget">
-            <h4>Get email updates</h4>
-            <form class="form-horizontal" action="#" method="post">
-              <fieldset>
-                <p>
-                  Sign up for email updates and we'll plant a tree for you through Trees for the Future.
-                </p>
-
-                <div class="input-prepend input-append">
-                  <input class="span2" id="appendedPrependedInput" type="text" placeholder="Email">
-                  <button class="btn btn-inverse" type="submit">Subscribe!</button>
-                </div>
-              </fieldset>
-            </form>
-            <ul class="social_small">
-              <li class="facebook first"><a href="#" title="Facebook">Facebook</a></li>
-              <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>
-              <li class="googleplus"><a href="#" title="google plus">Google plus</a></li>
-              <li class="flickr"><a href="#" title="flickr">Flickr</a></li>
-              <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="verybottom">
-      <div class="container">
-        <div class="row">
-          <div class="span6">
-            <p>&copy; Scaffold - All right reserved</p>
-          </div>
-          <div class="span6">
-            <div class="pull-right">
-              <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Scaffold
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
 
   <script src="../assets/js/jquery-1.8.2.min.js"></script>
   <script src="../assets/js/jquery.easing.1.3.js"></script>
@@ -508,5 +336,5 @@
   <script src="../assets/js/custom.js"></script>
 
 </body>
-
+<?php include("../html/footer.html"); ?>
 </html>

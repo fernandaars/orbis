@@ -52,6 +52,6 @@ class BaseUsuarios{
 
 }
 
-$u = new BaseUsuarios();
+#$u = new BaseUsuarios();
 
 ?>
