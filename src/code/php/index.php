@@ -120,7 +120,7 @@
               O dia das bruxas está chegando e com eles vários livros aterrorizantes,
               cheios de monstros e segredos! Mas não se preocupe, tudo preparado para o gosto e idade do seu filho!
             </p>
-            <a href="#">Confira!</a>
+            <a href="categorias.php">Confira!</a>
           </div>
         </div>
         <div class="span3">
@@ -131,7 +131,7 @@
               A aventura está sempre a espera! Castelos, gigantes, princesas e duendes! Existe um mundo todo prestes
               a ser descoberto, explorado e conquistado!
             </p>
-            <a href="#">Confira!</a>
+            <a href="categorias.php">Confira!</a>
           </div>
         </div>
         <div class="span3">
@@ -142,7 +142,7 @@
               Uma risada é sempre bem-vinda, a toda hora é bom rir. Confira nossa seleção dos mais engraçados livros
               com as mais engraçadas histórias e os personagens mais divertidos.
             </p>
-            <a href="#">Confira!</a>
+            <a href="categorias.php">Confira!</a>
           </div>
         </div>
       </div>
@@ -174,14 +174,9 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/volta_ao_mundo_em_80_dias.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
+                      <a href="perfil_livro.php?ISBN=8572328890">
+                      <img class="new_image_wrapp" src="../../img/book_covers/8572328890.jpg" alt="Portfolio name" title="" />
+                      </a>
                     </div>
                     <div class="caption">
                       <h5>Volta ao Mundo em 80 Dias <br> Júlio Verne</h5>
@@ -191,15 +186,10 @@
                 </li>
                 <li>
                   <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="../../img/book_covers/ponte_para_terabitia.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
+                  <div class="image-wrapp">
+                      <a href="perfil_livro.php?ISBN=8516050521">
+                      <img class="new_image_wrapp" src="../../img/book_covers/8516050521.jpg" alt="Portfolio name" title="" />
+                      </a>
                     </div>
                     <div class="caption">
                       <h5>Ponte Para Terabítia <br> Katherine Paterson</h5>
@@ -208,32 +198,10 @@
                 </li>
                 <li>
                   <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/o_misterio_do_cinco-estrelas.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
-                    </div>
-                    <div class="caption">
-                      <h5>O Mistério do 5 Estrelas <br> Marcos Rey</h5>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/o_pequeno_principe.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
+                  <div class="image-wrapp">
+                      <a href="perfil_livro.php?ISBN=9788595081512">
+                      <img class="new_image_wrapp" src="../../img/book_covers/9788595081512.jpg" alt="Portfolio name" title="" />
+                      </a>
                     </div>
                     <div class="caption">
                       <h5>O Pequeno Príncipe <br> Antoine de Saint-Exupéry</h5>
@@ -242,15 +210,10 @@
                 </li>
                 <li>
                   <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/onde_vivem_os_monstros.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
+                  <div class="image-wrapp">
+                      <a href="perfil_livro.php?ISBN=9898205318">
+                      <img class="new_image_wrapp" src="../../img/book_covers/9898205318.jpg" alt="Portfolio name" title="" />
+                      </a>
                     </div>
                     <div class="caption">
                       <h5>Onde Vivem os Monstros <br> Maurice Sendak</h5>
@@ -259,52 +222,13 @@
                 </li>
                 <li>
                   <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/harry_potter_e_a_pedra_filosofal.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
+                  <div class="image-wrapp">
+                      <a href="perfil_livro.php?ISBN=8532511015">
+                      <img class="new_image_wrapp" src="../../img/book_covers/8532511015.jpg" alt="Portfolio name" title="" />
+                      </a>
                     </div>
                     <div class="caption">
                       <h5>Harry Potter <br> JK Rowlling</h5>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/matilda.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
-                    </div>
-                    <div class="caption">
-                      <h5>Matilda <br> Roald Dahl</h5>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img class="new_image_wrapp" src="../../img/book_covers/o_escaravelho_do_diabo.jpg" alt="Portfolio name" title="" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img
-                            src="../assets/img/icons/link_post_icon.png" alt="" /></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="../assets/img/dummies/big1.jpg"><img
-                              src="../assets/img/icons/zoom_icon.png" alt="Portfolio name"
-                              title="Portfolio name" /></a></span>
-                      </article>
-                    </div>
-                    <div class="caption">
-                      <h5>O Escaravelho do Diabo <br> Lúcia Machado de Almeida</h5>
                     </div>
                   </div>
                 </li>
